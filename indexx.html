@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rafly Prasetia Kesuma — Profil</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+<nav>
+  <a href="#beranda" class="nav-logo">Rafly Prasetia Kesuma</a>
+  <ul class="nav-tautan">
+    <li><a href="#beranda">Beranda</a></li>
+    <li><a href="#tentang">Tentang</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+  </ul>
+  <button id="theme-toggle" class="tombol-sewa">🌙</button>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <a href="#kontak" class="tombol-sewa">Contact</a>
+  <button class="hamburger" id="hamburger2"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="nav-overlay" id="navOverlay">
+  <a href="#beranda" onclick="tutupNav()">Beranda</a>
+  <a href="#tentang" onclick="tutupNav()">Tentang</a>
+  <a href="#kontak" onclick="tutupNav()">Kontak</a>
+</div>
+
+<section id="beranda">
+  <div>
+    <h1 class="hero-nama">Rafly<br><span>Prasetia Kesuma</span></h1>
+    <p class="hero-jabatan">Mahasiswa Sistem Informasi</p>
+    <p class="hero-bio">Hai saya Rafly Prasetia Kesuma. Silakan hubungi saya melalui Instagram atau WhatsApp untuk kerja sama, bisnis project, atau kolaborasi.</p>
+    <div class="hero-tombol">
+      <a href="https://www.instagram.com/rflyprstia_/" class="tombol-utama">Instagram</a>
+      <a href="https://wa.me/6281264441854" class="tombol-garis">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="tentang">
+  <div class="tentang-grid">
+    <div class="tentang-foto">
+      <img src="potokeren.jpg" alt="Rafly Prasetia Kesuma">
+      <div class="tentang-label-foto">📍 Indonesia</div>
+    </div>
+    <div>
+      <div class="label-seksi">✦ Tentang Saya</div>
+      <h2 class="judul-seksi">Rafly Prasetia Kesuma</h2>
+      <p>Saya, Rafly Prasetia Kesuma, adalah mahasiswa Sistem Informasi di Universitas Muhammadiyah Sumatera Utara. Saya memiliki minat besar dalam pengembangan aplikasi, manajemen data, dan pemecahan permasalahan teknologi. Saya berkomitmen untuk selalu mengembangkan keterampilan teknis dan profesional melalui proyek akademik, organisasi, dan pengalaman.</p>
+    </div>
+  </div>
+</section>
+
+<section id="keahlian">
+  <div class="label-seksi">✦Keahlian</div>
+  <div class="grid-keahlian">
+    
+    <div class="kartu-keahlian" onclick="toggleProgress(this)">
+      <div class="nama-keahlian">JavaScript</div>
+      <div class="deskripsi-keahlian">Interaksi suatu Web</div>   
+    </div>
+    <div class="kartu-keahlian" onclick="toggleProgress(this)">
+      <div class="nama-keahlian">CSS</div>
+      <div class="deskripsi-keahlian">Styling & Animasi projek</div>
+    </div>
+    <div class="kartu-keahlian" onclick="toggleProgress(this)">
+      <div class="nama-keahlian">HTML5</div>
+      <div class="deskripsi-keahlian">Struktur Web</div>
+    </div>
+    <div class="kartu-keahlian" onclick="toggleProgress(this)">
+      <div class="nama-keahlian">Performance</div>
+      <div class="deskripsi-keahlian">optimalisasi</div>
+    </div>
+    <div class="kartu-keahlian" onclick="toggleProgress(this)">
+      <div class="nama-keahlian">Github</div>
+      <div class="deskripsi-keahlian">Version Control</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     SECTION PROYEK
+======================== -->
+<section id="proyek">
+  <div class="label">✦ Pengalaman</div>
+  <div class="grid-proyek">
+
+    <div class="kartu-proyek" onclick="toggleSplit(this)">
+      <div class="proyek-judul">Aplikasi Kalkulator Online</div>
+      <div class="proyek-detail">
+        <p><strong>Deskripsi:</strong>Kalkulator sederhana berbasis web untuk operasikan dasar matematika.</p>
+        <p><strong>Yaitu:</strong>Menunjukkan kemampuan Pemahaman logika pemrograman dan interaktivitas Pengguna.</p>
+      </div>
+    </div>
+
+    <div class="kartu-proyek" onclick="toggleSplit(this)">
+      <div class="proyek-judul">Website Toko Online Mini</div>
+      <div class="proyek-detail">
+        <p><strong>Deskripsi:</strong> Menampilkan produk, harga, Diskon, dan tombol “Beli” (simulasi).</p>
+        <p><strong>Yaitu:</strong> Menunjukkan pemahaman dasar e-commerce yang Bagus Dan profesional.</p>
+      </div>
+    </div>
+
+    <div class="kartu-proyek" onclick="toggleSplit(this)">
+      <div class="proyek-judul">Galeri Foto Responsiv</div>
+      <div class="proyek-detail">
+        <p><strong>Deskripsi:</strong> Website menampilkan foto dalam grid yang bisa diperbesar saat diklik.</p>
+        <p><strong>Yaitu:</strong> Menunjukkan kemampuan desain responsif dan CSS grid.</p>
+      </div>
+    </div>
+
+    <div class="kartu-proyek" onclick="toggleSplit(this)">
+      <div class="proyek-judul">Website Portfolio Pribadi</div>
+      <div class="proyek-detail">
+        <p><strong>Deskripsi:</strong> Situs menampilkan profil, keahlian, dan proyek yang pernah dikerjakan.</p>
+        <p><strong>Yaitu:</strong>Menunjukkan kemampuan HTML, CSS, dan dasar JavaScript.</p>
+      </div>
+    </div>
+
+    <div class="kartu-proyek" onclick="toggleSplit(this)">
+      <div class="proyek-judul">Blog Sederhana</div>
+      <div class="proyek-detail">
+        <p><strong>Deskripsi:</strong> Halaman Yang menampilkan artikel dengan gambar, judul, tanggal, dan waktu</p>
+        <p><strong>Yaitu:</strong> Menunjukkan kemampuan struktur konten, navigasi, dan styling teksnya.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section id="minum">
+  <h2>Berapa Kali Kamu Minum Air Hari Ini?</h2>
+
+  <div class="counter">
+    <button onclick="kurang()">-</button>
+    <span id="jumlah">0</span>
+    <button onclick="tambah()">+</button>
+  </div>
+
+  <p id="pesan">Yuk mulai minum air!</p>
+</section>
+
+<section id="kontak">
+  <div class="kontak-bungkus">
+    <div class="label-seksi">✦ Hubungi Saya</div>
+    <h2 class="judul-seksi">Kontak Rafly Prasetia Kesuma</h2>
+    <p>Untuk kerja sama, bisnis, project, atau pertanyaan silakan hubungi saya melalui Instagram atau WhatsApp.</p>
+    <div>
+      <a href="https://www.instagram.com/rflyprstia_/" class="tautan-media">📷 Instagram</a>
+      <a href="https://wa.me/6281264441854" class="tautan-media">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Rafly Prasetia Kesuma. All rights reserved.
+</footer>
+
+<script>
+    // === NAVIGATION ===
+const hamburger  = document.getElementById('hamburger');
+const hamburger2  = document.getElementById('hamburger2');
+const navOverlay = document.getElementById('navOverlay');
+
+hamburger.addEventListener('click', () => navOverlay.classList.toggle('buka'));
+hamburger2.addEventListener('click', () => navOverlay.classList.toggle('buka'));
+
+function tutupNav() { navOverlay.classList.remove('buka'); }
+
+function toggleProgress(card) {
+    const fill = card.querySelector('.progress-fill');
+    const max = fill.style.getPropertyValue('--fill');
+    fill.style.width = (fill.style.width === max ? '0%' : max);
+ }
+    function toggleSplit(card) {
+    card.classList.toggle('terbuka');
+ }
+    const themeToggle = document.getElementById("theme-toggle");
+    const html = document.documentElement;
+
+    function initializeTheme() {
+      const saved = localStorage.getItem("theme");
+      if (saved === "light") {
+        html.classList.add("light-mode");
+        themeToggle.textContent = "☀️";
+      } else {
+        html.classList.remove("light-mode");
+        themeToggle.textContent = "🌙";
+      }
+    }
+
+    function toggleTheme() {
+      html.classList.toggle("light-mode");
+      const isLight = html.classList.contains("light-mode");
+      localStorage.setItem("theme", isLight ? "light" : "dark");
+      themeToggle.textContent = isLight ? "☀️" : "🌙";
+    }
+
+    themeToggle.addEventListener("click", toggleTheme);
+    document.addEventListener("DOMContentLoaded", initializeTheme);
+
+    window.addEventListener("scroll", () => {
+      const nav = document.querySelector("nav");
+      nav.style.background = window.scrollY > 40 ? "rgba(0,0,0,0.9)" : "rgba(0,0,0,0.7)";
+    });
+  </script>
+  <script>
+    let count = localStorage.getItem("air") || 0;
+
+function updateDisplay() {
+  document.getElementById("jumlah").textContent = count;
+  localStorage.setItem("air", count);
+
+  const pesan = document.getElementById("pesan");
+
+  if (count === 0) {
+    pesan.textContent = "Yuk mulai minum air!";
+  } else if (count < 5) {
+    pesan.textContent = "Bagus! lanjutkan 👍";
+  } else if (count < 8) {
+    pesan.textContent = "Hampir cukup 💧";
+  } else {
+    pesan.textContent = "Mantap! tubuh kamu sehat 💪";
+  }
+}
+
+function tambah() {
+  count++;
+  updateDisplay();
+}
+
+function kurang() {
+  if (count > 0) {
+    count--;
+    updateDisplay();
+  }
+}
+
+// 🔥 penting biar langsung muncul saat load
+updateDisplay();
+</script>
+
+</body>
+
+</html>
