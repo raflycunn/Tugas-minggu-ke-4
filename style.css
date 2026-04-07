@@ -118,7 +118,14 @@ nav {
    SECTIONS
    ======================== */
 #minum {
-  max-width: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#minum {
+  padding: 40px 20px;
 }
 /* HERO */
 #beranda { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
