@@ -267,3 +267,8 @@ footer { text-align:center; padding:2rem; color:var(--text-muted); font-size:0.8
   font-weight: bold;
   color: var(--accent);
 }
+.minum-box {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
