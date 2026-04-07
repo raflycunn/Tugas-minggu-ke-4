@@ -155,7 +155,7 @@ nav {
 #minum img {
   width: 150px;   /* atur sesuai selera */
   max-width: 100%;
-  height: auto;
+  height: 300;
 }
 #minum > * {
   max-width: 500px;
