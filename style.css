@@ -106,6 +106,10 @@ nav {
   display:none; position:fixed; inset:0; top:var(--nav-height);
   background: rgba(246, 246, 246, 0.95); backdrop-filter:blur(12px); flex-direction:column; padding:2rem;
 }
+/*theme-toggle {
+   position: relative;
+   z-index: 101;
+}
 .nav-overlay.buka { display:flex; }
 .nav-overlay a { color:var(--text-light); font-size:1.3rem; margin-bottom:1rem; }
 .nav-overlay a:hover { color:var(--accent); }
