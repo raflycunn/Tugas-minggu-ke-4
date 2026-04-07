@@ -133,7 +133,7 @@ nav {
 /* TENTANG */
 .tentang-grid { display:grid; grid-template-columns:1fr 1.5fr; gap:2rem; align-items:center; }
 .tentang-foto { position:relative; }
-.tentang-foto img { width:75%; border-radius:var(--radius); border:2px solid var(--accent); }
+.tentang-foto img { width:85%; border-radius:var(--radius); border:2px solid var(--accent); }
 .tentang-label-foto { margin-top:0.5rem; font-weight:700; color:var(--accent); display:block; }
 .label-seksi { font-weight:600; color:var(--accent); margin-bottom:0.5rem; display:inline-block; }
 
