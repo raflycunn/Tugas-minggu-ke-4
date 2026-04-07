@@ -71,14 +71,22 @@ a { text-decoration:none; color:inherit; }
 /* ========================
    NAVBAR
    ======================== */
+/* Cari bagian nav , hapus yang lama dan ganti dengan ini */
 nav {
   position: fixed;
-  top:0; left:0; right:0;
+  top: 0; 
+  left: 50%; /* Posisikan di tengah */
+  transform: translateX(-50%); /* Penyeimbang posisi tengah */
+  width: 100%;
+  max-width: 1100px; /* Samakan dengan .wrapper-utama */
   height: var(--nav-height);
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(12px);
-  display:flex; align-items:center; padding:0 2rem;
-  z-index:100;
+  display: flex; 
+  align-items: center; 
+  padding: 0 2rem;
+  z-index: 100;
+  border-radius: 0 0 12px 12px; /* Opsional: supaya sudut bawah nav agak bulat */
 }
 #theme-toggle {
   margin-left: auto;
@@ -127,6 +135,8 @@ nav {
    SECTIONS
    ======================== */
 #minum {
+  padding: 100px 0;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
