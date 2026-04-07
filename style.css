@@ -128,7 +128,9 @@ nav {
   max-width: none;
   width: 100%;
 }
-
+#minum {
+   gap: 1rem;
+}
 #minum h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -150,6 +152,15 @@ nav {
 .tentang-label-foto { margin-top:0.5rem; font-weight:700; color:var(--accent); display:block; }
 .label-seksi { font-weight:600; color:var(--accent); margin-bottom:0.5rem; display:inline-block; }
 
+#minum img {
+  width: 150px;   /* atur sesuai selera */
+  max-width: 100%;
+  height: auto;
+}
+#minum > * {
+  max-width: 500px;
+  width: 100%;
+}
 /* KEAHLIAN */
 #keahlian { margin-top:4rem; }
 .grid-keahlian { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:1rem; margin-top:1rem; }
@@ -172,7 +183,7 @@ nav {
 .kartu-keahlian:hover::after { opacity:0.15; }
 
 /* PROYEK */
-#proyek { margin-top:4rem; }
+#proyek { margin-top:1rem; }
 .grid-proyek { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:1rem; margin-top:1rem; }
 .kartu-proyek {
   background: var(--bg-card);
@@ -240,7 +251,7 @@ footer { text-align:center; padding:2rem; color:var(--text-muted); font-size:0.8
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 .counter button {
