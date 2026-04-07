@@ -120,10 +120,13 @@ nav {
 #minum {
   min-height: 100vh;
   padding-top: 120px;
-  text-align: center;
-
-  max-width: none;
-  width: 100%;
+}
+.minum-box {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #minum {
    gap: 1rem;
