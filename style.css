@@ -117,8 +117,9 @@ nav {
 /* ========================
    SECTIONS
    ======================== */
-section { padding:6rem 2rem; max-width:1140px; margin:0 auto; }
-
+#minum {
+  max-width: none;
+}
 /* HERO */
 #beranda { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
 .hero-nama { font-family:'Syne',sans-serif; font-weight:800; font-size:3rem; margin-bottom:0.5rem; color:var(--accent-alt); }
