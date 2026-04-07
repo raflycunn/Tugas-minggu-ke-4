@@ -118,23 +118,7 @@ nav {
    SECTIONS
    ======================== */
 #minum {
-  min-height: 100vh;
-  padding-top: 120px;
-}
-.minum-box {
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-#minum {
-   gap: 1rem;
-}
-#minum h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  max-width: none;
 }
 /* HERO */
 #beranda { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
@@ -153,19 +137,6 @@ nav {
 .tentang-label-foto { margin-top:0.5rem; font-weight:700; color:var(--accent); display:block; }
 .label-seksi { font-weight:600; color:var(--accent); margin-bottom:0.5rem; display:inline-block; }
 
-#minum img {
-  width: 150px;   /* atur sesuai selera */
-  max-width: 100%;
-  height: 300;
-}
-#minum > * {
-  max-width: 500px;
-  width: 100%;
-}
-#minum .container {
-  max-width: 500px;
-  margin: auto;
-}
 /* KEAHLIAN */
 #keahlian { margin-top:4rem; }
 .grid-keahlian { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:1rem; margin-top:1rem; }
@@ -188,7 +159,7 @@ nav {
 .kartu-keahlian:hover::after { opacity:0.15; }
 
 /* PROYEK */
-#proyek { margin-top:1rem; }
+#proyek { margin-top:4rem; }
 .grid-proyek { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:1rem; margin-top:1rem; }
 .kartu-proyek {
   background: var(--bg-card);
@@ -241,22 +212,29 @@ footer { text-align:center; padding:2rem; color:var(--text-muted); font-size:0.8
     font-size:20px;
     margin-left:auto;
   }
+#minum {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-@media(max-width:640px){
-  #minum h2 {
-    font-size: 1.3rem;
-  }
+#minum h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-  #jumlah {
-    font-size: 2.5rem;
-  }
+#jumlah {
+  font-size: 4rem;
 }
+
 .counter {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin: 2rem auto;
+  margin: 2rem 0;
 }
 
 .counter button {
